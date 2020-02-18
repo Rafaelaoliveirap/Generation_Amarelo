@@ -1,0 +1,30 @@
+<meta charset = "UTF-8">
+<script>
+var nome, codigo, ano_nasc, idade, ano_atual, ano_adm, tempo_trab
+
+nome=prompt("Insira o seu nome: ");
+codigo=Number(prompt("Insira o seu código"));
+ano_adm=Number(prompt("Insira o ano da sua admissão: "));
+ano_nasc=Number(prompt("Insira o ano do seu nascimento: "));
+ano_atual=2020;
+idade=ano_atual-ano_nasc;
+tempo_trab=ano_atual-ano_adm;
+
+    if(idade>=65){
+        console.log("Caro(a) " + nome + " você pode requerer")
+}
+    else{
+        if(tempo_trab>=30){
+           console.log("Caro(a) " + nome + " você pode requerer")
+    }
+        else{
+         if(tempo_trab>=25 && idade >=60){
+               console.log("Caro(a) " + nome + " você pode requerer")
+        }
+            else{
+               console.log("Caro(a) " + nome + " você não pode requerer")
+        }
+    }
+}
+
+</script>

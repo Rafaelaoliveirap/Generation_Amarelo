@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+var nome, resultado, n1, n2, n3, media
+
+nome=prompt("Digite o seu nome: ");
+n1=parseFloat(prompt("Insira a sua n1: "));
+n2=parseFloat(prompt("Insira a sua n2: "));
+n3=parseFloat(prompt("Insira a sua n3: "));
+
+media= (n1 + n2 + n3)/3;
+media.toFixed(1);
+
+if(media >= 7 ){
+    resultado="aprovado(a)!";
+}
+else{
+    resultado="reprovado(a)!";
+}
+
+console.log("A média do aluno(a) " + nome + " foi: " + media + "\nPortanto está "+ resultado);
+
+</script>

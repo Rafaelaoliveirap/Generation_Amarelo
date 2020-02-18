@@ -1,0 +1,25 @@
+<meta charset = "UTF-8">
+<script>
+var nome, n1, n2, media, resultado;
+
+nome=prompt("Insira o seu nome: ");
+n1=parseFloat(prompt("Insira a sua n1: "));
+n2=parseFloat(prompt("Insira a sua n2: "));
+
+media=(n1+n2)/2;
+media=Math.round (media);
+
+if(media<=5){
+    resultado="Você está reprovado(a)!"
+}
+else if(media>7){
+        resultado="Você está aprovado(a)!"
+    }
+    else{
+        resultado="Você fará o exame!"
+    }
+
+console.log("Caro(a) " + nome + ". " + resultado);
+
+
+</script>
